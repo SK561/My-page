@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>emoji-translate</title>
+
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <meta name="mobile-web-app-capable"
+          content="yes">
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="emoji.js"></script>
+    <script src="translator.js"></script>
+</head>
+
+<body>
+
+<textarea id="input" maxlength="1000">hi</textarea>
+
+<div class="centered_buttons">
+    <button onclick="clearField()">&nbsp;&nbsp;&nbsp;&nbsp;Clear&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <button onclick="copyText()">&nbsp;&nbsp;&nbsp;&nbsp;Copy&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <button onclick="shareText()">&nbsp;&nbsp;&nbsp;&nbsp;Share&nbsp;&nbsp;&nbsp;&nbsp;</button>
+</div>
+
+<div class="output_content">
+    <div id="output"></div>
+</div>
+
+<script src="process.js"></script>
+
+</body>
+</html>
